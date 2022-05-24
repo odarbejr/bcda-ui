@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <title> PHYSICAL INVENTORY REPORT OF PROPERTY, PLANT & EQUIPMENT </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    .container_content{
+        max-width: 1400px;
+        align-items: center;
+        justify-content: center;
+    }
+    table{
+        border:1px solid black;
+        margin: auto;
+        width: 100%;
+    }
+    th{
+        border:1px solid black;
+        font-size: 13px;
+        text-align: center;
+    }
+    td{
+        border:1px solid black;
+        font-size: 12px;
+        text-align: center;
+        color:#000;
+        font-weight: 500;
+    }
+    /* col-3 col-9 */
+    th .col-3{
+        padding:10px;
+        height: 38px;
+        border-bottom:0;
+        border-left:0;
+        border-right:solid 1px black;
+        border-top:solid 1px black;
+    }
+    th .col-9{
+        padding:10px;
+        height: 38px;
+        border-bottom:0;
+        border-top:solid 1px black;
+    }
+    td .col-3{
+        padding:10px;
+        height: 38px;
+        border-right:solid 1px black;
+    }
+    td .col-9{
+        padding:10px;
+        height: 38px;
+    }
+    /* col-4 col-8 */
+    th .col-4{
+        padding:10px;
+        height: 38px;
+        border-bottom:0;
+        border-left:0;
+        border-right:solid 1px black;
+        border-top:solid 1px black;
+    }
+    th .col-8{
+        padding:10px;
+        height: 38px;
+        border-bottom:0;
+        border-top:solid 1px black;
+    }
+    td .col-4{
+        padding:10px;
+        height: 38px;
+        border-right:solid 1px black;
+        
+    }
+    td .col-8{
+        padding:10px;
+        height: 38px;
+    }
+</style>
+<body><center>
+    <div class="container_content">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <img src="https://bcda.gov.ph/themes/custom/bootstrap_sub/logo.svg" width="200px">
+                    <p><b>PHYSICAL INVENTORY REPORT OF PROPERTY, PLANT & EQUIPMENT</b><br><small><b>Made as of 31 December 2020</b></small></p>
+            </div>
+            <div class="col-2">
+                <span style="font-size:12px;right:0;"><b>
+                    National & Corporate Sector<br> General Form No. 41(A)<br>(Revised January 1992)</b>
+                </span>
+            </div>
+        </div>
+        <div class="text-left mb-4" style="font-size:14px">
+            <b>ASSET CLASS :<span>MACHINERIES & EQUIPMENT (3200)</span></b>
+        </div>
+        <div class="d-flex flex-row">
+            <div class="p-2">
+                <span><!-- get name --></span>
+                <div style="border-bottom:solid 2px black;width:200px"></div>
+                <i style="font-size:13px;"><b>(Name of Accountable Officer)</b></i>
+            </div>
+            <div class="p-2">
+                <span></span>
+                <div style="border-bottom:solid 2px black;width:200px"></div>
+                <i style="font-size:13px;"><b>(Official Designation)</b></i>
+            </div>
+            <div class="p-2">
+                <span></span>
+                <div style="border-bottom:solid 2px black;width:200px"></div>
+                <i style="font-size:13px;"><b>(Branch/Office)</b></i>
+            </div>
+            <div class="p-2">
+                <span style="position:relative;top:-15px;">is accountable, having assumed such responsibility on</span> 
+            </div>
+            <div class="p-2">
+                <span></span>
+                <div style="border-bottom:solid 2px black;width:200px"></div>
+            </div>
+        </div>
+
+        <table cellpadding="0" cellspacing="0">
+            <tr> 
+               <th style="width:2%"></th>
+               <th style="width:15%">DESCRIPTION</th>
+               <th style="width:6%"></th>
+               <th style="width:3%">QTY</th>
+               <th style="width:8%">Unit Value</th>
+               <th style="width:12%">Accounting<br> Records
+                    <div class="container mt-0">
+                        <div class="row">
+                            <div class="col-3">QTY</div>
+                            <div class="col-9">Value</div>
+                        </div>
+                    </div>
+                </th>
+               <th style="width:12%">Property<br>Records
+                    <div class="container mt-0">
+                        <div class="row">
+                            <div class="col-3">QTY</div>
+                            <div class="col-9">Value</div>
+                        </div>
+                    </div>
+                </th>
+               <th style="width:12%">
+                    <div style="padding-bottom: 3px;">SHORT</div> 
+                    <div class="container mt-3">
+                        <div class="row">
+                            <div class="col-4">QTY</div>
+                            <div class="col-8">Value</div>
+                        </div>
+                    </div>
+               </th>
+               <th style="width:10%">
+                    <div style="padding-bottom: 3px;">OVER</div> 
+                    <div class="container mt-3">
+                        <div class="row">
+                            <div class="col-4">QTY</div>
+                            <div class="col-8">Value</div>
+                        </div>
+                    </div>
+               </th>
+               <th style="width:10%">Current Assignee</th>
+               <th style="width:10%">REMARKS whereabouts, Status conditions, etc. </th>
+            </tr>
+
+            <tbody id="getData"></tbody>
+    
+            <script>
+                let tableList = "";
+                for (let i = 0; i < 10; i++) {
+                    tableList += `<tr>
+                        <td></td>
+                        <td class="text-left">Heavy Duty Honeywell (Air Ionizer)</td>
+                        <td>32000041</td>
+                        <td>1</td>
+                        <td>35,100.00</td>
+                        <td>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-3">1</div>
+                                    <div class="col-9">35,100.00</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-3"></div>
+                                    <div class="col-9"></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4">1</div>
+                                    <div class="col-8">35,100.00</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4"></div>
+                                    <div class="col-8"></div>
+                                </div>
+                            </div>
+                        </td>
+                        
+                        <td class="text-left">MARINELL PACLIBAR</td>
+                        <td>Un-serviceable</td>
+                    </tr>`;
+                }
+                document.getElementById("getData").innerHTML = tableList;
+            </script>
+        </table>
+
+        <div class="text-left pt-5">
+            <div style="font-size:12px;text-indent: 20px;"><b>TOTAL QUANTITY : <span>18</span></b></div>
+            <div style="font-size:12px;text-indent: 40px;">
+                <b>TOTAL AMOUNT : <span>PHP 1,974,219.00</span></b>
+            </div>
+
+            <div class="pt-5 mb-3">
+                <div style="font-size:12px"><b>TOTAL QUANTITY(SHORT): <span>18</span></b></div>
+                <div style="font-size:12px;text-indent: 50px;">
+                    <b>TOTAL QUANTITY(SHORT) : <span>PHP 1,974,219.00</span></b>
+                </div>
+            </div>
+        </div>
+    </div></center>
+</body>
+</html>
+

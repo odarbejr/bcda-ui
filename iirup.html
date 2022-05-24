@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    <title>INVENTORY AND INSPECTION REPORT OF BMHI UNSERVICEABLE PROPERTIES</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    .container_content{
+        max-width: 1400px;
+        align-items: center;
+        justify-content: center;
+    }
+    table{
+        margin: auto;
+        width: 100%;
+    }
+    th{
+        border:2px solid #5F5F5F;
+        font-size: 13px;
+        text-align: center;
+        font-weight: 700;
+    }
+    .bg-th{
+        background-color: #F9DDC3;
+        height: 59px;
+    }
+    td{
+        border:2px solid #5F5F5F;
+        font-size: 12px;
+        text-align: center;
+        color:#000;
+        font-weight: 500;
+        padding: 0%;
+    }
+    /* col-7 col-5 */
+    th .col-7{
+        padding:10px;
+        height: 85px;
+        border-bottom:0;
+        border-left:0;
+        border-right:solid 1px black;
+        border-top:solid 1px black;
+    }
+    th .col-5{
+        padding:10px;
+        height: 85px;
+        border-bottom:0;
+        border-top:solid 1px black;
+    }
+    .col-7{
+        height: 23px;
+        border-right:solid 1px black;
+    }
+    .col-5{ height: 23px; }
+    .tb-space{
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-bottom:0;
+    }
+    .border-dotted-line{
+        height: 27px;
+        border-top: rgb(136, 136, 136);
+        border-bottom: rgb(136, 136, 136);
+        border-top-style: dotted;
+        border-bottom-style: dotted;
+        padding: 3px;
+    }
+    .person-name{
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 600; 
+        text-align: center;
+    }
+    .border-line-reciever-signature{
+        border-bottom: 1px solid black;
+        width: 250px;
+    }
+    .signature{
+        font-size: 12px;
+        text-align: center;
+        position: relative;
+        left: -120px;
+
+    }
+    .c-border-line-reciever-signature{
+        border-bottom: 1px solid black;
+    }
+    .c-signature{
+        font-size: 12px;
+        text-align: center;
+    }
+    .border-line-approved-signature{
+        border-bottom: 1px solid black;
+        width: 300px;
+        margin-right: 60px;
+    }.dated-name{
+        color:rgb(6, 55, 216);
+        font-weight:700;
+    }
+    .date-year{
+        text-transform: capitalize;
+        font-weight: 600; 
+        text-align: center;
+    }
+    .date-line{
+        border-bottom: 1px solid black;
+        width: 100px;
+    }.img-signatures img{
+        width: 100%;
+        height: 100px;
+        object-fit: contain;
+        justify-content: center;
+        position: relative;
+        top: 40px;
+        left: -100px;
+        z-index: -1;
+    }.img-signatures2 img{
+        width: 100%;
+        height: 100px;
+        object-fit: contain;
+        justify-content: center;
+        position: relative;
+        top: 40px;
+        left: -100px;
+        z-index: -1;
+    }.img-signatures3 img{
+        width: 100%;
+        height: 100px;
+        object-fit: contain;
+        position: relative;
+        top:-5px;
+        left:250px;
+        z-index: -1;
+    }#content-approve{
+        position: relative;
+        top: -31px;
+    }
+</style>
+<body>
+    <center>
+    <div class="container_content pt-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="text-center">
+                    <img src="https://bcda.gov.ph/themes/custom/bootstrap_sub/logo.svg" width="200px">
+                </div>
+                <p><b>INVENTORY AND INSPECTION REPORT OF BMHI UNSERVICEABLE PROPERTIES</b><br><small><b>As of July 31, 2021</b></small></p>
+            </div>
+        </div>
+        <div class="text-left mr-4">
+            <b>Fund:</b>
+            <input type="text" class="mb-2" name="" style="border:0;border-bottom: 2px solid #5F5F5F;">
+        </div>
+               
+        <table cellpadding="0" cellspacing="0" style="border-top:0;">
+            <tr>
+                <th class="p-2" style="width:68%"><b>INVENTORY<b></th>
+                <th class="p-2" style="width:32%"><b>INSPECTION</b></th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td class="text-center pt-0 pb-0">
+                        <table cellpadding="0" cellspacing="0" style="border:0">
+                            <tr>
+                                <th class="bg-th" style="border-left:0;border-top:0;width:8%">Date Acquired</th>
+                                <th class="bg-th" style="border-left:0;border-top:0;width:16%">Particulars</th>
+                                <th class="bg-th" style="border-top:0;width:10%">Asset Number</th>
+                                <th class="bg-th" style="border-top:0;width:6%">Qty</th>
+                                <th class="bg-th" style="border-top:0;width:11%">Unit Cost</th>
+                                <th class="bg-th" style="border-top:0;width:11%">Total Cost</th>
+                                <th class="bg-th" style="border-top:0;width:14%">Accumulated<br>Depreciation as of July 2021</th>
+                                <th class="bg-th" style="border-top:0;width:10%">Net Book<br>Value</th>
+                                <th class="bg-th" style="border-top:0;width:14%">Remarks</th>
+                            </tr>
+                            <tr><!-- items column section looping  sample data-->
+                                <td style="border-left:0;width:8%;" class="tb-space">
+                                    <div class="border-dotted-line"></div>
+                                </td>
+                                <td style="width:16%" class="tb-space">
+                                    <div class="border-dotted-line text-left">Wooden Filing Cabinet</div>
+                                </td>
+                                <td style="width:10%" class="tb-space">
+                                    <div class="border-dotted-line">01-05-098</div>
+                                </td>
+                                <td style="width:6%" class="tb-space">
+                                    <div class="border-dotted-line">5</div>
+                                </td>
+                                <td style="width:11%" class="tb-space">
+                                    <div class="border-dotted-line text-right">5,041,692.96</div>
+                                </td>
+                                <td style="width:11%" class="tb-space">
+                                    <div class="border-dotted-line text-right">5,041,692.96</div>
+                                </td>
+                                <td style="width:14%" class="tb-space">
+                                    <div class="border-dotted-line text-right">4,682,598.89</div>
+                                </td>
+                                <td style="width:10%" class="tb-space">
+                                    <div class="border-dotted-line text-right">359,094.07</div>
+                                </td>
+                                <td style="border:2px solid #5F5F5F;border-right:0;width:14%" class="tb-space">
+                                    <div class="border-dotted-line">Semi-expendable</div>
+                                </td>
+                            </tr>
+                            
+                            <tr><!-- total output column section -->
+                                <td style="border-left:0;width:8%;" class="tb-space">
+                                    <div class="border-dotted-line"><b></b></div>
+                                </td>
+                                <td style="width:16%" class="tb-space">
+                                    <div class="border-dotted-line text-left"><b>Total</b></div>
+                                </td>
+                                <td style="width:10%" class="tb-space">
+                                    <div class="border-dotted-line"><b>01-05-098</b></div>
+                                </td>
+                                <td style="width:6%" class="tb-space">
+                                    <div class="border-dotted-line"><b>5</b></div>
+                                </td>
+                                <td style="width:11%" class="tb-space">
+                                    <div class="border-dotted-line text-right"><b>5,041,692.96</b></div>
+                                </td>
+                                <td style="width:11%" class="tb-space">
+                                    <div class="border-dotted-line text-right"><b>5,041,692.96</b></div>
+                                </td>
+                                <td style="width:14%" class="tb-space">
+                                    <div class="border-dotted-line text-right"><b>4,682,598.89</b></div>
+                                </td>
+                                <td style="width:10%" class="tb-space">
+                                    <div class="border-dotted-line text-right"><b>359,094.07</b></div>
+                                </td>
+                                <td style="border:0;width:14%" class="tb-space">
+                                    <div class="border-dotted-line"><b></b></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <!-- Partition table -->
+                    <td class="text-center pt-0 pb-0">
+                        <table  cellpadding="0" cellspacing="0" style="border:0">
+                            <tr>
+                                <th class="bg-th" style="border-left:0;border-top:0;width:30%;">Appraised Value</th>
+                                <th class="bg-th" style="border-left:0;border-top:0;width:30%">Disposition</th>
+                                <th class="bg-th" style="border-left:0;border-top:0;width:40%">Remarks</th>
+                            </tr>
+                            <tr><!-- items column section looping sample data-->
+                                <td class="tb-space" style="border-bottom:0;border-left:0;width:30%;">
+                                    <div class="border-dotted-line text-right">50.00</div>
+                                </td>
+                                <td class="tb-space" style="border-bottom:0;width:30%">
+                                    <div class="border-dotted-line"></div>
+                                </td>
+                                <td class="tb-space" style="border:0;width:40%">
+                                    <div class="border-dotted-line"></div>
+                                </td>
+                            </tr>
+                            <tr><!-- total output column section -->
+                                <td class="tb-space" style="border-bottom:0;border-left:0;width:30%;">
+                                    <div class="border-dotted-line text-right">50.00</div>
+                                </td>
+                                <td class="tb-space" style="border-bottom:0;width:30%">
+                                    <div class="border-dotted-line"></div>
+                                </td>
+                                <td class="tb-space" style="border-bottom:0;border-right:0;width:40%">
+                                    <div class="border-dotted-line"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center pt-0 pb-0">
+                        <table cellpadding="0" cellspacing="0" style="border:0">
+                            <tr>
+                                <td class="text-left p-2" style="border:0"><h6 class="">CERTIFIED CORRECT BY:</h6>
+                                    <div class="pt-0">
+                                        <span class="img-signatures">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Geov%C3%A1_Lemos_Cavalcante_signature.svg">
+                                        </span>
+                                        <div class="border-line-reciever-signature">
+                                            <div class="person-name"><b>MARINELL R. PACLIBAR</b></div>
+                                        </div>
+                                        <div class="signature">Name and Signature</div>
+                                    </div>
+                                    <div class="pt-4">
+                                        <div class="border-line-reciever-signature">
+                                            <div class="person-name"><b>OIC, Property Division</b></div>
+                                        </div>
+                                        <div class="signature">Position and Designation</div>
+                                    </div>
+                                    <div class="pt-3">
+                                        <div class="border-line-reciever-signature">
+                                            <div class="date-year"><h5>10 August 2021</h5></div>
+                                        </div>
+                                        <div class="signature">Date</div>
+                                    </div>
+                                </td>
+                                <td class="text-left" style="border:0">
+                                    <h6 class="">VERFIFIED BY:</h6>
+                                    <div class="pt-0">
+                                        <!-- signatures -->
+                                        <span class="img-signatures2">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Taio_Cruz.jpg">
+                                        </span>
+                                        <div class="border-line-reciever-signature">
+                                            <div class="person-name"><b>DEAN S. MONTALBAN</b></div>
+                                        </div>
+                                        <div class="signature">Name and Signature</div>
+                                    </div>
+                                    <div class="pt-4">
+                                        <div class="border-line-reciever-signature">
+                                            <div class="person-name"><b>VP, ACD</b></div>
+                                        </div>
+                                        <div class="signature">Position and Designation</div>
+                                    </div>
+                                    <div class="pt-3">
+                                        <div class="border-line-reciever-signature">
+                                            <div class="person-name"><h5></h5></div>
+                                        </div>
+                                        <div class="signature">Date</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="text-center pt-0 pb-0">
+                        <table cellpadding="0" cellspacing="0" style="border:0">
+                            <tr>
+                                <td style="border:0">
+                                    <div class="row">
+                                        <div class="col-6" style="font-size: 12px;">I CERTIFY that I have inspected each<br>and every article enumerated in this report.</div>
+                                        <div class="col-6" style="font-size: 12px;">I CERTIFY that I have<br>witnessed the inspection of the articles enumerated in this report.</div>
+                                    </div>
+                                    <div class="pt-0" style="margin-top:-40px;">
+                                        <span class="img-signatures2">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Taio_Cruz.jpg">
+                                        </span>
+                                        <div class="c-border-line-reciever-signature">
+                                            <div class="person-name text-left ml-5"><b>ARISTOTLE E. GUERRERO</b></div>
+                                        </div>
+                                        <div class="c-signature">Name and Signature of Inspector<span class="ml-5"></span> Name and Signature of Witness</div>
+                                    </div>
+                                    <div class="pt-5">
+                                        <div class="border-line-reciever-signature w-50">
+                                            <div class="person-name text-left"style="margin-left:50px"><b>OIC, PPMD</b></div>
+                                        </div>
+                                        <div class="signature">Position and Designation</div>
+                                    </div>
+                                    <div class="pt-3">
+                                        <div class="c-border-line-reciever-signature">
+                                            <div class="date-year text-left ml-5"><h5>Aug 10, 21</h5></div>
+                                        </div>
+                                        <div class="c-signature mb-3">
+                                            <div class="d-flex justify-content-around">
+                                                <div class="">Date</div>
+                                                <div class="">Date</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border-right:0;">
+                        <div class="text-center"><h6>APPROVED BY:</h6></div>
+                        <span class="img-signatures3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Juan_Peron_Signature.svg/256px-Juan_Peron_Signature.svg.png">
+                        </span>
+                        <div class="d-flex justify-content-end mb-0" id="content-approve">
+                            <div class="border-line-approved-signature">
+                                <div class="person-name"><b>ARREY A. PEREZ</b></div>
+                            </div>
+                        </div>
+                        <div class="text-right mb-3" style="margin-right:190px;margin-top:-30px;">SVP, CSG</div>
+                    </td>
+                    <td style="border-left:0;">
+                        <div style="margin-top:75px;">
+                            <div class="date-line">
+                                <div class="dated-name"><b>Aug. 13, 2021</b></div>
+                            </div>
+                            <div class="text-left" style="margin-left:35px;">Date</div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div></center>
+</body>
+</html>
+
