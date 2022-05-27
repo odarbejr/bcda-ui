@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> REPORT OF LOST, STOLEN, DAMAGED OR DESTROYED PROPERTY </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 	<style>
+        body{font-family: "Times New Roman", Times, serif;}
+        table {   
+            font-family: "Times New Roman", Times, serif;
+            width: 100%;
+        }
+        th{
+            border: 2px solid black;
+            text-align: center;
+            font-size: 15px;
+            padding: 6px;
+        }
+        .border-line{
+            border-bottom: 2px solid black;
+            width: 280px;
+        }
+        .border-line-right{
+            border-bottom: 2px solid black;
+            width: 150px;
+        }
+        td{
+            border:solid 2px black;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 14px;
+            text-align: center;
+        }
+        .container_content{
+            max-width: 1200px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .border-line-police{
+            font-size: 15px;
+            /* width:60%; */
+            border-bottom: solid 1px black;
+            border-top:0;
+            border-left:0;
+            border-right:0;
+            margin-left: -290px;
+        }
+
+        /* The container */
+        .container {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 15px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        /* Hide the browser's default checkbox */
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+        /* Create a custom checkbox */
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 18px;
+            width: 20px;
+            /* background-color: #eee; */
+            border: rgb(24, 24, 24) solid 1px;
+            margin-bottom: 0;
+        }
+        .border-bottom-lined{
+            border-bottom: solid 1px black;
+            text-align: center;
+            padding: 10px;
+            width: 80%;
+        }
+        .border-bottom-lined span{
+            padding-bottom: 4px;
+        }
+        .border-line-signature{
+            border-bottom: solid 1px black;
+            width: 60%;
+        }
+        .border-line-reciever-signature{
+            border-bottom: solid 1px black;
+            width: 90%;
+        }
+        
+        .border-line-date{
+            font-size: 15px;
+            width: 25%;
+            border-bottom: solid 1px black;
+        }
+        .blank-border-line{
+            font-size: 15px;
+            width:10%;
+            border-bottom: solid 1px black;
+            border-top:0;
+            border-left:0;
+            border-right:0;
+            padding-top: 7px;
+        }
+        .person-name{
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .signature{ font-size: 16px; 
+            font-style: italic;
+        }
+
+	</style>
+</head>
+<body><center>
+    <div class="container_content pb-5" id="container_content" >
+        
+        <div class="row pt-3">
+            <div class="col-3">
+                <b>BCDA-PROPD-2014-05<br>May 2014</b>
+            </div>
+            <div class="col-6 text-center">
+                <div class="text-center">
+                    <img src="https://bcda.gov.ph/themes/custom/bootstrap_sub/logo.svg" width="200px">
+                </div>
+                <p>2/F Bonifacio Technology Center, 31st St. corner 2nd Avenue
+                    Bonifacio Global City, Taguig City</p>
+                <div class="pt-2"><b><h4>GATE PASS</h4></b></div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <div class="d-flex flex-row-reverse bd-highlight mb-0">
+            <div class="p-2 bd-highlight">
+                <b>Control No. :</b> 
+                <span style="text-decoration: underline;"><b>GP-2201-00000003</b></span>
+            </div>
+          </div>
+        <div class="d-flex flex-row-reverse bd-highlight mt-0">
+            <div class="p-2 bd-highlight">
+                <b>Date :</b> 
+                <span style="text-decoration: underline;"><b>January 27, 2022</b></span>
+            </div>
+        </div>
+        <div class="text-left">
+            <div><h5><b>TO: GUARD ON DUTY</b></h5></div>
+        </div>
+        <div class="p-3">
+            <span style="margin-left:-350px;"> Please allow the bearer</span>
+            <span class="pr-3"></span> 
+            <span style="border-bottom:solid 1px black;width:50%"><b>ROMMEL C. CORONACION</b></span>
+            <span class="pl-3">to pull-out from</span> 
+        </div>
+        <div class="p-3">
+            <table>
+                <tbody>
+                    <tr>
+                        <td style="border:0;width:20%;">
+                        </td>
+                        <td style="border:0;padding-top:0;width:20%;">
+                            <label class="container mb-3"><b><i>BTC Office</i></b>
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td style="border:0;width:60%;">
+                            <div class="row">
+                                <div class="col-5">
+                                    <label class="container pt-0"><b><i>Other(pls. indicate)</i></b>
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="col-7 p-0">
+                                    <span style="position: relative;margin-left:-65px"></span><input class="border-line-police p-0">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="text-left pl-3">the following item/s:</div>
+        <table cellpadding="0" cellspacing="0" style="border-bottom:0;">
+            <tr>
+                <th>Item #</th>
+                <th>QTY</th>
+                <th>Unit</th>
+                <th>Item(s)/Description</th>
+                <th>Asset No.</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>UNIT</td>
+                    <td class="p-2 text-left">PC WORKSTATION, HP IDS TWR G4 23" LED MONITOR</td>
+                    <td>10002028</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <!-- default empty -->
+            <tr><td class="p-4" style="border-top:0;border-bottom:0;"></td></tr>
+        </table>
+
+        <table cellpadding="0" cellspacing="0">
+            <tr class="p-0">
+                <td  style="border-bottom:0;" class="p-0">
+                    <div class="pt-3">
+                        <table>
+                            <tr class="p-0">
+                                <td class="p-3" style="border:0;width:20%">
+                                    <div class="ml-5" style="position:relative;top:-15px;margin-bottom: -30px;">
+                                        <label class="container mb-1"><b>BCDA Property</b>
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="p-3" style="border:0;width:25%">
+                                    <div class="ml-5" style="position:relative;top:-15px;margin-bottom: -30px;">
+                                        
+                                        <label class="container"><b>Demo/Service Unit</b>
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="p-3"style="border:0;width:25%">
+                                    <div class="ml-5" style="position:relative;top:-15px;margin-bottom: -30px;">
+                                        
+                                        <label class="container"><b>For Replacement</b>
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="p-3" style="border:0;width:30%">
+                                    <div class="ml-5" style="position:relative;top:-15px;margin-bottom: -30px;">
+                                        
+                                        <label class="container"><b>Others (pls. Specify)</b>
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="p-2 pb-3"><b>Purpose :</b> For Pull Out Screen Monitor only for replacement under warranty of Columbia Technologies Inc.</td>
+            </tr>
+        </table>
+
+        <table cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td style="border-top:0;width:34%;">
+                        <div class="text-left p-2">
+                            <b>Requested by:</b>
+                        </div>
+                        <div class="pt-2">
+                            <center>
+                                <div class="border-line-signature">
+                                    <div class="person-name"> ROMMEL C. CORONACION</div>
+                                </div>
+                                <div class="signature">Signature over printed name</div>
+                            </center>
+                        </div>
+                    </td>
+                    <td style="border-top:0;width:35%;">
+                        <div class="text-left p-2">
+                            <b>Cleared by :</b>
+                        </div>
+                        <center>
+                            <div class="border-line-signature">
+                                <div class="person-name"> RONALD S. ABUSTAN, GSD</div>
+                            </div>
+                            <div class="signature">Person to whom PAR/ICS issued</div>
+                        </center>
+                    </td>
+                    <td style="border-top:0;border-left:0;width:31%;">
+                        <div class="text-left p-2">
+                            <b>Approved by :</b>
+                        </div>
+                        <center>
+                            <div class="border-line-signature">
+                                <div class="person-name"> ARISTOTLE E. GUERRERO</div>
+                            </div>
+                            <div class="signature">OIC, PPMD</div>
+                        </center>
+                    </td>
+                </tr>
+                <!-- Second td column===================================================-->
+                <tr>
+                    <td style="border-top:0;width:34%;">
+                        <div class="text-left p-2">
+                            <b>Requested by:</b>
+                        </div>
+                        <div class="pt-3">
+                            <center>
+                                <div>
+                                    <div class="person-name"> MARINELL R. PACLIBAR</div>
+                                </div>
+                                <div class="signature" style="font-style: normal;">OIC, Property Division</div>
+                            </center>
+                        </div>
+                    </td>
+                    <td style="border-top:0;width:35%;">
+                        <div class="text-left p-2">
+                            <b>Noted by :</b>
+                        </div>
+                        <center>
+                            <div class="border-line-signature pt-4">
+                                <div class="person-name"></div>
+                            </div>
+                            <div class="signature">Guard on Duty</div>
+                        </center>
+                    </td>
+                    <td style="border-top:0;border-left:0;width:31%;">
+                        <div class="text-left p-2">
+                            <b>Approved by :</b>
+                        </div>
+                        <center>
+                            <div class="border-line-signature pt-4">
+                                <div class="person-name"></div>
+                            </div>
+                            <div class="signature">OIC, PPMD</div>
+                        </center>
+                    </td>
+                </tr>
+                <!-- 3th td column===================================================-->
+                <tr>
+                    <td style="border-top:0;width:34%;">
+                        <div class="text-left p-2">
+                            <b style="position:relative;top:-20px;">Date Returned:</b>
+                        </div>
+                    </td>
+                    <td style="border-top:0;width:35%;">
+                        <div class="text-left p-2">
+                            <b style="position:relative;top:5px;">Return by:</b>
+                        </div>
+                        <center>
+                            <div class="border-line-signature pt-4">
+                                <div class="person-name"></div>
+                            </div>
+                            <div class="signature">Signature over printed name</div>
+                        </center>
+                    </td>
+                    <td style="border-top:0;border-left:0;width:31%;">
+                        <div class="text-left p-2">
+                            <b style="position:relative;top:5px;">Received by:</b>
+                        </div>
+                        <!-- <b class="pb-3">Received by:</b> -->
+                        <center>
+                            <div class="border-line-signature pt-4">
+                                <div class="person-name"></div>
+                            </div>
+                            <div class="signature">Signature over printed name</div>
+                        </center>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div></center>
+</body>
+</html>
