@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <title> Request for Quotation and Abstract of Quotation </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    body{font-family: "Lucida Sans", Times, serif;}
+    .container_content{
+        max-width: 992px;
+        align-items: center;
+        justify-content: center;
+    }
+    table{
+        border:1px solid black;
+        margin: auto;
+        width: 100%;
+    }
+    th{
+        border:1px solid black;
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+        font-style: italic;
+        font-weight: 400;
+    }
+    td{
+        border:1px solid black;
+        font-size: 13px;
+        text-align: center;
+        color:#000;
+        font-weight: 500;
+        padding-top: 5px;
+    }
+</style>
+<body><center>
+    <div class="container_content pt-5 pb-2" style="font-size: 14px;">
+        <div class="justify-content-center">
+            <h5><b>BASES CONVERSION and DEVELOPMENT AUTHORITY</b></h5><b>
+            <div class="">2/F Bonifacio Technology Center, 31st Street Bonifacio Global City, Taguig City</div>
+            <div class="">Tel. No. 8575-1700 loc. 1782/1784</div>
+            <div class="">Fax No. : 8575-1785</div></b>
+        </div>
+        <div class="d-flex justify-content-end">
+            <div class="p-2"><ins><b>email at jllanciola@bcda.gov.ph</b></ins></div>
+        </div>
+        <div class="justify-content-center">
+            <div class="p-2"><ins><b>REQUEST FOR QUOTATION</b></ins></div>
+        </div>
+        <div class="d-flex">
+            <div class="p-2 mr-auto p-2"><b>(Company Name):</b></div>
+            <div class="p-2"><b>Date 14 June 2021</b></div>
+        </div> 
+        <div class="d-flex justify-content-start pb-0">
+            <div class="pl-5 pb-0">
+                <input type="text" class="border-dark border-top-0 border-left-0 border-right-0"><!-- get input $dataName -->
+            </div>
+        </div> 
+        <div class="d-flex justify-content-start">
+            <div class="pl-5 pt-0 pb-0">
+                <input type="text" class="border-dark border-top-0 border-left-0 border-right-0">
+            </div>
+        </div> 
+        <div class="d-flex">
+            <div class="mr-auto pl-5 pt-0 pb-0">
+                <input type="text" class="border-dark border-top-0 border-left-0 border-right-0">
+            </div>
+            <div class="p-2"><b>PR #: 0002477</b></div>
+        </div>
+
+        <div class="text-left pt-3">
+            <p>Please quote your lowest price(s) using this form, or your letterhead. Also, take note of the following details:</p>
+            <ol>
+                <li>Quotation/s shall be addressed to the Head of Procurement Division. Please indicate Solicitation or Reference No.</li>
+                <li>Send the said quotation/s to BCDA or fax the same at no. 575-1785 not later than <b>17 June 2021</b></li>
+                <li>Quotation/s submitted after the set deadline indicated in item no. 2 shall not be accepted/considered.</li>
+                <li>The quotation/proposal shall be properly signed by the authorized representative and/or</li>
+            </ol>
+        </div>
+        <div class="text-left pt-3 pb-3">
+            <p class="pb-0"><i>BCDA reserves the right to accept or reject any or all of the quotations, or waive formally therein, or to accept quotation/s<br>
+                <span class="pt-0 ml-5">
+                    as may be considered most advantageous to the gov't., or to pursue appropriate legal action should the winning bidder<br>
+                    <span class="ml-5">refuse to accept the award without justifiable reason/s.</span> 
+                </span>
+            </i></p>
+        </div>
+
+        <div class="d-flex">
+            <div class="mr-auto pl-5 pt-0 pb-0">
+                <div class="mb-0"><ins><b>JAYVEE L. LANCIOLA</b></ins></div>
+                <div class="pt-0"><b>CANVASSER</b></div>
+            </div>
+            <div class="">
+                <div class="mb-0"><ins><b>ALMIRA S. CLARIANES</b></ins></div>
+                <div class="pt-0"><b>Supervising Administrative Officer IV</b></div>
+            </div>
+        </div>
+
+        <!-- Table content section ================================================= -->
+        <table class="border-0">
+            <thead>
+                <tr class="border-0">
+                    <th class="text-left border-bottom-0 border-right-0" style="font-style: normal;"><span class="mr-5 pb-2">TO:</span> BCDA HEAD OF PROCUREMENT<br>
+                        <span class="ml-4" style="font-weight: 100;">Per request, below is/are the price(s) of the article(s)/service(s) as indicated under Unit Price</span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <table cellpadding="0" cellspacing="0">
+            <tr> 
+               <th style="width:7%">QTY<br>(A)</th>
+               <th style="width:8%">UNIT</th>
+               <th style="width:30%">DESCRIPTION/SPECIFICATIONS</th>
+               <th style="width:15%">UNIT COST<br> (ex-VAT) (B) </th>
+               <th style="width:10%">VAT (C) </th>
+               <th style="width:15%">OTAL UNIT COST (D=B+C)</th>
+               <th style="width:15%">OTAL AMOUNT<br> (AxD)</th>
+            </tr>
+
+            <tbody id="getData"></tbody>
+    
+            <script>
+                let tableList = "";
+                for (let i = 0; i < 8; i++) {
+                    tableList += `<tr>
+                        <td> 1 </td>
+                        <td> SET </td>
+                        <td class="text-left pl-2">BRAKEPAD (ORIGINAL)</td>
+                        <td></td>
+                        <td class="text-right pr-2"></td>
+                        <td class="text-right pr-2"></td>
+                        <td class="text-right pr-2"></td>
+                        
+                    </tr>`;
+                }
+                document.getElementById("getData").innerHTML = tableList;
+            </script>
+            
+        </table>
+        
+        <div class="text-left pt-1 pb-3">
+            <h6 style="font-size: 14px;"><i>Terms and conditions:</i></h6>
+            <div class="d-flex flex-column">
+                <div class="pt-1"><span class="ml-5 mr-3"><b>Price:</b></span> Inclusive of all applicable taxes</div>
+                <div class="pt-1"><span class="ml-5 mr-3"><b>Paymen:</b></span> 30 days</div>
+                <div class="pt-1"><span class="ml-5 mr-3"><b>Delivery:</b></span> <!--get $delivery--></div>
+                <div class="pt-1"><span class="ml-5 mr-3"><b>Validity of price:</b></span>  one month</div>
+                <div class="pt-1"><span class="ml-5 mr-3"><b>WARRANTY:</b></span></div>
+            </div>
+        </div>
+
+        <div style="border-top:#000 1px solid">
+            <div class="text-left ml-3">We hereby certify, that we have prepared, checked and reviewed this quotation.<br>
+                This quotation is valid unless revoked in writing which should be done prior to our receipt of the Purchase Order or Job Order.
+            </div>
+            <div class="d-flex justify-content-between pt-5 pb-5 ml-3">
+                <div>
+                    <span><!--get $name---></span>
+                    <div style="text-decoration: overline;">Printed Name/Signature/DATE</div>
+                </div>
+                <div>
+                    <span><!--get $name---></span>
+                    <div style="text-decoration: overline;">Immediate Supervisor</div>
+                </div>
+                <div>
+                    <span><!--get $name---></span>
+                    <div style="text-decoration: overline;">Telephone / Fax Number</div>
+                </div>
+            </div><br>
+            <div class="pt-5">
+                <p>Request for Quotation PR 2477 Spare Parts for Toyota Hi Lux P0B 482</p>
+            </div>
+        </div>
+    </div></center>
+</body>
+</html>
+
