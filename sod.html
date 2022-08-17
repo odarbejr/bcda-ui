@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <title> SOD </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    body{font-family: "Times New Roman", Times, serif;}
+
+    table , th, td{
+        border:1px solid black;
+        margin: auto;
+        text-align: center;
+        
+    }
+    th{
+        text-align: center;
+        font-size: 16px;
+    }
+   
+    .b-bottom{
+        border-bottom: solid 1px black;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex pt-5">
+                    <div class="date p-2"><h5>February 10, 2022</h5></div>
+                </div>
+                <div class="d-flex flex-column mb-3">
+                    <div class="p-2 pt-0 pb-0"><h5>Ms. TERESITA C. GUEVARRA</h5>
+                        <div class="">Supervising Auditor</div>
+                        <div class="">Commission on Audit</div>
+                        <div class="">BCDA, Bonifacio Global City, Taguig City</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                        <h6 class="p-2"><b>Thru:</b></h6>
+                    </div>
+                    <div class="col-lg-9 col-md-12">
+                        <div class="p-2">
+                            <h6><b>Mr. JOHN PAUL C. VALDEZ</b></h6>
+                            Audit Team Leader</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="p-2">
+                    <h6><b>Madam:</b></h6>
+                    <p>
+                    In compliance with COA Circular No. 96-010 dated 15 August 1996, below is a list of delivery accepted by the Property Management
+Division and inspected by the available representative of the Inspection Committee:
+                </p></div>
+                <div class="p-2">
+                    <table>
+                        <tr>
+                            <th style="width:30%">BS/DR/IR</th>
+                            <th>PO/JO No.</th>
+                            <th style="width:5%">Qty</th>
+                            <th style="width:5%">Unit</th>
+                            <th style="width:30%">Description</th>
+                            <th>Amount</th>
+                            <th>Date Received</th>
+                            <th>Remarks</th>
+                        </tr>
+                        <tbody id="getData">
+                            <!-- section for loop -->
+                            <script>
+                                let tableList = "";
+                                for (let i = 0; i < 3; i++) {
+                                    tableList += `<tr>
+                                <td>000461, 000458</td>
+                                <td>2250</td>
+                                <td>
+                                    <div class="d-flex flex-column mb-3">
+                                        <div class="b-bottom p-0 pt-2 pb-3">90</div>
+                                        <div class="b-bottom pt-1">90</div>
+                                        <div class="p-0 pb-0">90</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex flex-column mb-3">
+                                        <div class="b-bottom p-0 pt-2 pb-3">LOT</div>
+                                        <div class="b-bottom pt-1">SACK</div>
+                                        <div class="p-0 pb-0">PACK</div>
+                                    </div>
+                                </td>
+                                <td class="text-left">
+                                    
+                                    <div class="d-flex flex-column mb-3">
+                                        <div class="b-bottom p-0">ASSORTED GROCERIES ( PLEASE SEE ATTACHED PO & SALES INVOICE)</div>
+                                        <div class="b-bottom pt-1">RICE, SINANDOMENG 50KG</div>
+                                        <div class="p-0 pb-0">SUGAR 1 KILO</div>
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-flex flex-column mb-3">
+                                        <div class="b-bottom p-0 pt-2 pb-3">193,702.50</div>
+                                        <div class="b-bottom pt-1">186,300.00</div>
+                                        <div class="p-0 pb-0">6,120.00</div>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="d-flex flex-column mb-3">
+                                        <div class="p-0 pt-2 pb-0">10-Feb-2022</div>
+                                    </div>
+                                </td>
+                                <td class="text-text-center">
+                                    <div class="d-flex flex-column mb-3">
+                                        <div class="p-0 pt-2 pb-0 text-capitalize">COMPLETE DELIVERY</div>
+                                    </div>
+                                </td>
+                            </tr>`;
+                                }
+                                document.getElementById("getData").innerHTML = tableList;
+                            </script>
+                            <!-- section for static row column -->
+                            <tr>
+                                <td>0042</td>
+                                <td>2238</td>
+                                <td>500</td>
+                                <td>PIECE</td>
+                                <td>STORAGE BOX WITH BCDA LOGO</td>
+                                <td>194,500.00</td>
+                                <td>09-Feb-2022</td>
+                                <td class="text-center">COMPLETE DELIVERY</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="p-2">
+                    <div class="d-flex flex-column mb-3">
+                        <div class="p-2 mb-4">Very truly yours,</div>
+                        <div class="p-2">
+                            <h6><b>ARISTOTLE E. GUERRERO</b></h6>
+                            <div class="text-capitalize">OIC, PPMD</div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
